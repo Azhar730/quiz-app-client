@@ -30,6 +30,7 @@ export const quizApi = createApi({
         url: `/quizzes/${id}`,
         method: "DELETE",
       }),
+      invalidatesTags: ["Quiz"],
     }),
   }),
 });
